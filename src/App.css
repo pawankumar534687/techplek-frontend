@@ -1,0 +1,38 @@
+@layer components {
+  .responsive-container {
+    width: 100%;
+    max-width: 1600px;  
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;  
+    padding-right: 8px;
+  }
+
+  @media (min-width: 640px) { 
+    .responsive-container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  @media (min-width: 1024px) { 
+    .responsive-container {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+
+  @media (min-width: 1280px) { 
+    .responsive-container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .responsive-container {
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+  }
+}
