@@ -5,7 +5,7 @@ const Unauthorized = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
       
-      {/* Big Emoji */}
+   
       <div className="text-9xl mb-6 animate-bounce">🚫</div>
 
       <h1 className="text-4xl font-bold text-red-500 mb-4">Unauthorized</h1>

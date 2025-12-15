@@ -6,7 +6,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const ProjectEdit = () => {
-  const { id } = useParams(); // project ID from URL
+  const { id } = useParams(); 
   const navigate = useNavigate();
   const token = useSelector((state) => state.auth.token);
 
