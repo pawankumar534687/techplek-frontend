@@ -16,7 +16,7 @@ const ProjectEdit = () => {
  
   const fetchProject = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/api/get-project-data/${id}`, {
+      const response = await axios.get(`https://techplek-backend.onrender.com/api/get-project-data/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const project = response.data;
@@ -42,7 +42,7 @@ const ProjectEdit = () => {
   const onSubmit = async (data) => {
     try {
       await axios.put(
-        `http://localhost:8000/api/edit-project/${id}`,
+        `https://techplek-backend.onrender.com/api/edit-project/${id}`,
         data,
         {
           headers: { Authorization: `Bearer ${token}` },

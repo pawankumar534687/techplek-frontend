@@ -18,7 +18,7 @@ const Login = () => {
   
   const onSubmit = async (data) => {
     try {
-        const response = await axios.post("http://localhost:8000/api/login", data)
+        const response = await axios.post("https://techplek-backend.onrender.com/api/login", data)
 
         dispatch(loginSuccess(response.data.token))
         toast.success(response.data.message)

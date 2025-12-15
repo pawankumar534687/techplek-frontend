@@ -23,7 +23,7 @@ const token = useSelector((state) => state.auth.token);
     try {
       
      const response =  await axios.post(
-        "http://localhost:8000/api/create-user",
+        "https://techplek-backend.onrender.com/api/create-user",
         data,
         {
           headers: {

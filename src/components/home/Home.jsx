@@ -13,7 +13,7 @@ const Home = () => {
   const fetchProjects = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8000/api/all-projects",
+        "https://techplek-backend.onrender.com/api/all-projects",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -30,7 +30,7 @@ const Home = () => {
   const deleteProject = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/delete-project/${id}`,
+        `https://techplek-backend.onrender.com/api/delete-project/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

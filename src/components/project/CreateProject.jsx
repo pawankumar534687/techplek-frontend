@@ -19,7 +19,7 @@ const CreateProject = () => {
     try {
       
      const response = await axios.post(
-        "http://localhost:8000/api/create-project",
+        "https://techplek-backend.onrender.com/api/create-project",
         data,
         {
           headers: {

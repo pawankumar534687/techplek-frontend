@@ -13,7 +13,7 @@ const AllUsers = () => {
 
   const fetchUsers = async () => {
     try {
-      const res = await axios.get("http://localhost:8000/api/all-users", {
+      const res = await axios.get("https://techplek-backend.onrender.com/api/all-users", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -27,7 +27,7 @@ const AllUsers = () => {
   const deleteUser = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:8000/api/delete-user/${id}`,
+        `https://techplek-backend.onrender.com/api/delete-user/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
