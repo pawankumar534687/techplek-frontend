@@ -19,7 +19,7 @@ function App() {
     <>
       {!hideNavbar && <Navbar/>}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<ProtectedRoute allowedRoles={["admin", "manager", "user"]}><Home /></ProtectedRoute>} />
         <Route path="/create-user" element={  <ProtectedRoute allowedRoles={["admin"]}><CreateUser /></ProtectedRoute>} />
         <Route path="/login" element={<Login />} />
         <Route path="/create-project" element={ <ProtectedRoute allowedRoles={["admin", "manager"]}><CreateProject /></ProtectedRoute>} />
