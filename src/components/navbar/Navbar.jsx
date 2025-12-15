@@ -67,7 +67,10 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <span className="text-sm text-pink-600 font-semibold">{role.toUpperCase(0,1)}</span>
+          <span className="text-sm text-pink-600 font-semibold">
+  {role?.toUpperCase() || ""}
+</span>
+
 
           <button
             className="text-sm px-4 py-1.5 cursor-pointer rounded-lg bg-red-500 text-white hover:bg-red-600"
